@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Cache et logs
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dossier de build (utilisé par des outils comme Vite, Webpack, etc.)
+dist/
+build/
+
+# Configurations locales de l'IDE et de l'éditeur de code
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers système macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails générés par macOS
+._*
+
+# Icônes sur réseau
+.Spotlight-V100
+.Trashes
+
+# Fichiers système Linux
+*~
+
+# Configurations spécifiques à Vercel (déjà géré en général mais au cas où)
+.vercel/
+.env.local
+.env.*.local
+.env.test.local
+.env.production.local
+
+# Configurations locales
+.env
+.env.*
+
+# Temp files
+*.tmp
+*.swp
+*.swo
