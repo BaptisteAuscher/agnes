@@ -1,0 +1,483 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f8fa; /* Couleur de fond claire */
+    color: #333; /* Texte sombre pour contraste */
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 1em 2em;
+    box-shadow: 0 4px 8px rgba(173, 2, 164, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    align-items: center;
+  }
+  
+  .nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #5e35b1; /* Violet foncé */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ab47bc; /* Rose/violet clair */
+  }
+  
+  .cta-button, .continue-navigation {
+    background: linear-gradient(135deg, #5e35b1, #ab47bc);
+    color: #ffffff;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover, .continue-navigation:hover {
+    background: linear-gradient(135deg, #ab47bc, #ce93d8);
+  }
+  
+  /* Section */
+  .section {
+    padding: 4em 2em;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .section h1, .section h2 {
+    color: #5e35b1; /* Violet */
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+  }
+  
+  .section p {
+    color: #555;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 1em auto;
+    line-height: 1.7;
+  }
+
+  #accroche {
+    color: #333;
+    max-width: 1000px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+  }
+  
+  #accroche .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .accroche-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-section {
+    flex: 3;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.9em;
+  }
+  
+  .text-section h1 {
+    font-size: 3rem;
+    color: #5e35b1;
+    font-weight: bold;
+    text-align: left;
+    line-height: normal;
+  }
+  
+  .sous-texte {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  .image-section {
+    flex: 2;
+  }
+  
+  .image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    #accroche {
+      padding: 4em 1em;
+    }
+  
+    .accroche-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-section {
+      padding-right: 0;
+      margin-bottom: 2em;
+    }
+  
+    .image-section {
+      width: 100%;
+    }
+  
+    .image-placeholder {
+      height: 250px;
+    }
+  }
+  
+  
+  /* Placeholder pour les images de maquette */
+  .placeholder-img {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #e1bee7, #ce93d8);
+    margin: 2em 0;
+    border-radius: 8px;
+  }
+  
+  /* Formulaire */
+  form {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1.75em;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #d1c4e9;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  form input:focus, form select:focus, form textarea:focus {
+    border-color: #ab47bc;
+    outline: none;
+  }
+  
+  form button[type="submit"] {
+    background: linear-gradient(135deg, #5e35b1, #ab47bc);
+    color: #ffffff;
+    padding: 0.8em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  form button[type="submit"]:hover {
+    background: linear-gradient(135deg, #ab47bc, #ce93d8);
+  }
+
+  form .checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .checkbox-group label {
+    font-size: .9em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    padding: 10px;
+    margin: 0;
+  }
+
+  form .checkbox-group label input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  form .button-container {
+    width: 100%;
+    margin-top: 1em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Animation de scroll */
+  .section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      padding: 1em;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
+  
+    .section {
+      padding: 2em 1em;
+    }
+  
+    form {
+      padding: 1.5em;
+    }
+  }
+  
+  /* Alignement à gauche pour les titres et le texte */
+.section {
+    text-align: left;
+  }
+  
+  .section h1, .section h2, .section p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Styles du footer */
+  footer {
+    background-color: #f3e5f5; /* Fond clair pour le footer */
+    padding: 1.5em 2em;
+    color: #5e35b1; /* Texte violet */
+    font-size: 0.9rem;
+    border-top: 1px solid #e1bee7;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-left p {
+    margin: 0.5em 0;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo-placeholder {
+    width: 100px;
+    height: 50px;
+    background-color: #e1bee7; /* Placeholder gris clair */
+    border-radius: 4px;
+  }
+
+
+/* Workflow Steps Container */
+.workflow-step {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 3em;
+  gap: 1em;
+}
+
+/* Timeline Line */
+
+
+/* Step Icon (Number) */
+.step-icon {
+  background: linear-gradient(135deg, #5e35b1, #ab47bc);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+
+/* Content with narrower width for readability */
+.step-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: .9rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.step-content p {
+  margin: 20px;
+}
+
+/* Fixed Position of Images */
+.step-image-placeholder {
+  min-width: 300px;
+  min-height: 170px;
+  background-color: #e1bee7;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition : scale .2s ease;
+  max-width: 50%;
+}
+
+.step-image-placeholder:hover {
+  scale: 1.02;
+}
+
+.step-image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(173, 2, 164, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workflow-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-icon {
+    margin: 0 0 1em 0;
+    left: 0;
+  }
+
+  .step-card {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .workflow-step:not(:last-child):before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .step-content {
+    max-width: 100%;
+  }
+}
+
+.modal {
+  display: none; /* Par défaut, le modal est caché */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Assombrir l'arrière-plan */
+  z-index: 1000; /* Placer devant tous les autres éléments */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: opacity 0.3s ease; /* Animation de l'apparition du modal */
+}
+
+/* Contenu du modal, contenant l'image */
+.modal-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* L'image affichée dans le modal */
+.modal-content img {
+  max-width: 80%;
+  max-height: 70%;
+  object-fit: contain; /* Ajuster l'image sans déformer */
+  transition: transform 0.3s ease;
+}
+
+/* Effet de flou sur l'arrière-plan */
+.modal.show {
+  display: flex;
+  opacity: 1;
+}

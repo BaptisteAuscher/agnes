@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agnès</title>
+  <link rel="stylesheet" href="./style.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#accroche">Accueil</a></li>
+        <li><a href="#agnes">Agnès</a></li>
+        <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><button class="cta-button">Demander une démo</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--- Section accroche -->
+  <section id="accroche">
+    <div class="container">
+      <div class="accroche-content">
+        <div class="text-section">
+          <h1>Agnès, l'IA au service du cinéma</h1>
+          <p class="sous-texte">Analysez vos scénarios, comparez-les avec une base de données massive et obtenez une liste de comparables basées sur des données précises et fiables.</p>
+          <button class="continue-navigation">Continuez la navigation</button>
+        </div>
+        <div class="image-section">
+          <!-- L'illustration sera insérée ici -->
+          <div class="image-placeholder">
+            <img src="./assets/front-illustration.svg" alt="Une équipe de distributeurs qui travaillent sur un projet">
+          </div> <!-- Placez ici votre image -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Section Agnès -->
+  <section id="agnes" class="section">
+    <h1>Agnès</h1>
+    <p>Agnès est un outil d'IA innovant conçu pour les distributeurs de cinéma. En analysant un dossier artistique, elle génère une liste de films similaires avec des analyses de marché détaillées.</p>
+    <p>Avec Agnès, les distributeurs peuvent obtenir des insights précieux sur des films comparables, y compris des informations sur la stratégie marketing, le budget et le public cible.</p>
+    <p>Que vous soyez à la recherche d'inspiration ou de données pour orienter vos décisions, Agnès offre une solution rapide et complète.</p>
+    <!-- Placeholder images -->
+    <div class="placeholder-img"></div>
+    <div class="placeholder-img"></div>
+  </section>
+
+  <!-- Section Qui sommes-nous ? -->
+  <section id="qui-sommes-nous" class="section">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Nous sommes une équipe passionnée de technologie et de cinéma, dédiée à simplifier le travail des distributeurs grâce à des outils d'intelligence artificielle performants.</p>
+    <p>Notre équipe est composée de spécialistes en IA, en analyse de données, et de professionnels du secteur cinématographique, tous engagés à offrir un produit qui répond aux besoins des distributeurs de films.</p>
+    <p>Avec Agnès, nous souhaitons contribuer à un écosystème cinématographique plus dynamique et mieux informé.</p>
+  </section>
+
+  <!-- Section Workflow -->
+  <section id="workflow" class="section">
+    
+    <h1>Workflow</h1>
+
+    <div class="workflow-step">
+      <div class="step-icon">1</div>
+      <div class="step-content">
+        <p>
+          L'utilisateur commence en chargeant un dossier artistique au format texte, Word ou PDF. Notre plateforme accepte différents formats pour une intégration rapide et flexible.
+        </p>
+        <div class="step-image-placeholder">
+          <img src="./assets/ecran_principal_image.png" alt="Image d'analyse du budget" class="imageToZoom">
+        </div>
+      </div>
+    </div>
+
+    <div class="workflow-step reverse">
+      <div class="step-icon">2</div>
+      <div class="step-content">
+        <div class="step-image-placeholder">
+          <img src="./assets/budget_image.png" alt="Image d'analyse du budget" class="imageToZoom">
+        </div>
+        <p>
+          Nos algorithmes avancés de Machine Learning et d’analyse sémantique examinent le dossier en détail, fournissant des insights clés sur les points forts et le potentiel du projet.
+        </p>
+      </div>
+    </div>
+
+    <div class="workflow-step">
+      <div class="step-icon">3</div>
+      <div class="step-content">
+        <p>
+          En s'appuyant sur une vaste base de données, notre IA génère une liste de films comparables, accompagnée de points d’analyse pour mieux comprendre leurs publics, budgets, et stratégies.
+        </p>
+        <div class="step-image-placeholder"></div>
+      </div>
+    </div>
+
+    <div class="workflow-step reverse">
+      <div class="step-icon">4</div>
+      <div class="step-content">
+        <div class="step-image-placeholder">
+          <img src="./assets/statistiques_age_image.png" alt="Image d'analyse du budget" class="imageToZoom">
+        </div>
+        <p>
+          L’utilisateur obtient des statistiques détaillées sur les films proposés, incluant les budgets, audiences cibles, stratégies de distribution, casting, et partenaires de production, pour une vision complète et précise.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <img src="" id="modalImage" alt="Grand Image">
+    </div>
+  </div>
+
+
+
+  <!-- Formulaire de demande de démo -->
+  <section id="demande-demo" class="section">
+    <div class="container">
+      <h1>Demander une démo</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="telephone">Numéro de téléphone :</label>
+          <input type="text" id="telephone" name="telephone" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="entreprise">Entreprise :</label>
+          <input type="text" id="entreprise" name="entreprise" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="poste">Quel poste occupez-vous au sein de l'entreprise ?</label>
+          <select id="poste" name="poste" required>
+            <option value="data-scientist">Ingénieur.e en science des données</option>
+            <option value="distribution-manager">Chargé.e de distribution</option>
+            <option value="marketing-responsible">Responsable marketing et communication</option>
+            <option value="press-manager">Chargé.e de presse</option>
+            <option value="acquisition-manager">Responsable des acquisitions</option>
+            <option value="programming-manager">Responsable de la programmation</option>
+            <option value="distribution-coordinator">Coordina.teur.trice de la distribution</option>
+            <option value="product-manager">Chef.fe de produit</option>
+            <option value="legal-rights-manager">Responsable des droits et contrats</option>
+            <option value="digital-project-manager">Chef.fe de projet digital</option>
+            <option value="international-distribution-manager">Responsable de la distribution internationale</option>
+            <option value="production-assistant">Assistant.e de production</option>
+            <option value="sales-manager">Responsable des ventes</option>
+            <option value="film-performance-analyst">Analyste des performances de films</option>
+            <option value="other">Autre</option>
+          </select>
+          <div id="autre-poste" class="input-group" style="display: none;">
+            <input type="text" id="autre-poste-text" name="autre-poste" placeholder="Précisez votre poste">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="budget-analyse">Combien d'argent est dépensé dans la récupération et l'analyse de données ?</label>
+          <select id="budget-analyse" name="budget-analyse" required>
+            <option value="10-50k">De 10 000 à 50 000 €</option>
+            <option value="50-100k">De 50 000 à 100 000 €</option>
+            <option value="plus100k">Plus de 100 000 €</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="fonctionnalites">Quelles sont les fonctionnalités qui vous intéressent ?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="fonctionnalites" value="base-de-donnees"> La large base de données de films.</label>
+            <label><input type="checkbox" name="fonctionnalites" value="analyses-pousses"> Les analyses poussées sur chacun des films</label>
+            <label><input type="checkbox" name="fonctionnalites" value="analyse-dossier-artistique"> L'analyse de dossier artistique</label>
+            <label><input type="checkbox" name="fonctionnalites" value="algorithme-recommandations"> L'algorithme de clustering et de recommandations de films similaires</label>
+            <label><input type="checkbox" name="fonctionnalites" value="autre-fonctionnalite" id="autre-fonctionnalite"> Autre :</label>
+            <div id="autre-fonctionnalite-text" class="input-group" style="display: none;">
+              <input type="text" id="autre-fonctionnalite-input" name="autre-fonctionnalite" placeholder="Précisez la fonctionnalité">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="intentions">Quelles sont vos intentions avec Agnès ?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="intentions" value="financement"> Vous assister dans le processus de financement de films.</label>
+            <label><input type="checkbox" name="intentions" value="marketing"> Vous assister dans le processus de marketing.</label>
+            <label><input type="checkbox" name="intentions" value="analyse-statistiques"> Récupérer des informations statistiques sur un grand nombre de films.</label>
+            <label><input type="checkbox" name="intentions" value="autre-intentions" id="autre-intentions"> Autre :</label>
+            <div id="autre-intentions-text" class="input-group" style="display: none;">
+              <input type="text" id="autre-intentions-input" name="autre-intentions" placeholder="Précisez vos intentions">
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="commentaires">D'autres commentaires :</label>
+          <textarea id="commentaires" name="commentaires" rows="4"></textarea>
+        </div>
+  
+        <div class="button-container">
+          <button type="submit">Envoyer ma demande de démo</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+        <div class="footer-left">
+            <p>Contactez-nous : +33 1 23 45 67 89</p>
+            <p>&copy; 2024 Agnès. Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+            <div class="footer-logo-placeholder"></div>
+        </div>
+        </div>
+    </footer>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
